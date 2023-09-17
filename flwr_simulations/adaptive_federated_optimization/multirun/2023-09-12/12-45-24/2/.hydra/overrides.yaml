@@ -1,0 +1,5 @@
+- strategy=fedadam
+- num_rounds=3
+- num_total_clients=100
+- cpus_per_client=1
+- gpus_per_client=0.5

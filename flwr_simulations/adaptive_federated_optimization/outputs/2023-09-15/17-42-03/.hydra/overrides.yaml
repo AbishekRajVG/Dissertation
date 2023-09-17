@@ -1,0 +1,5 @@
+- strategy=fedavg
+- num_rounds=3
+- num_total_clients=100
+- cpus_per_client=2
+- gpus_per_client=0.01

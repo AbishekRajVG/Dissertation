@@ -1,0 +1,54 @@
+INFO flwr 2023-09-11 18:18:37,729 | app.py:146 | Starting Flower simulation, config: ServerConfig(num_rounds=3, round_timeout=None)
+Files already downloaded and verified
+Files already downloaded and verified
+[2023-09-11 18:18:37,729][flwr][INFO] - Starting Flower simulation, config: ServerConfig(num_rounds=3, round_timeout=None)
+INFO flwr 2023-09-11 18:18:39,464 | app.py:180 | Flower VCE: Ray initialized with resources: {'accelerator_type:G': 1.0, 'memory': 39402032334.0, 'object_store_memory': 19701016166.0, 'CPU': 6.0, 'node:10.131.34.34': 1.0, 'GPU': 1.0}
+[2023-09-11 18:18:39,464][flwr][INFO] - Flower VCE: Ray initialized with resources: {'accelerator_type:G': 1.0, 'memory': 39402032334.0, 'object_store_memory': 19701016166.0, 'CPU': 6.0, 'node:10.131.34.34': 1.0, 'GPU': 1.0}
+INFO flwr 2023-09-11 18:18:39,464 | server.py:86 | Initializing global parameters
+[2023-09-11 18:18:39,464][flwr][INFO] - Initializing global parameters
+INFO flwr 2023-09-11 18:18:39,465 | server.py:269 | Using initial parameters provided by strategy
+[2023-09-11 18:18:39,465][flwr][INFO] - Using initial parameters provided by strategy
+INFO flwr 2023-09-11 18:18:39,465 | server.py:88 | Evaluating initial parameters
+[2023-09-11 18:18:39,465][flwr][INFO] - Evaluating initial parameters
+INFO flwr 2023-09-11 18:18:44,566 | server.py:91 | initial parameters (loss, other metrics): 499.0257976055145, {'accuracy': 0.1006}
+[2023-09-11 18:18:44,566][flwr][INFO] - initial parameters (loss, other metrics): 499.0257976055145, {'accuracy': 0.1006}
+INFO flwr 2023-09-11 18:18:44,567 | server.py:101 | FL starting
+[2023-09-11 18:18:44,567][flwr][INFO] - FL starting
+DEBUG flwr 2023-09-11 18:18:44,567 | server.py:218 | fit_round 1: strategy sampled 10 clients (out of 100)
+[2023-09-11 18:18:44,567][flwr][DEBUG] - fit_round 1: strategy sampled 10 clients (out of 100)
+DEBUG flwr 2023-09-11 18:19:06,432 | server.py:232 | fit_round 1 received 10 results and 0 failures
+[2023-09-11 18:19:06,432][flwr][DEBUG] - fit_round 1 received 10 results and 0 failures
+WARNING flwr 2023-09-11 18:19:06,722 | fedavg.py:243 | No fit_metrics_aggregation_fn provided
+[2023-09-11 18:19:06,722][flwr][WARNING] - No fit_metrics_aggregation_fn provided
+INFO flwr 2023-09-11 18:19:09,801 | server.py:119 | fit progress: (1, 590.2960395812988, {'accuracy': 0.1}, 25.233791291015223)
+[2023-09-11 18:19:09,801][flwr][INFO] - fit progress: (1, 590.2960395812988, {'accuracy': 0.1}, 25.233791291015223)
+INFO flwr 2023-09-11 18:19:09,801 | server.py:166 | evaluate_round 1: no clients selected, cancel
+[2023-09-11 18:19:09,801][flwr][INFO] - evaluate_round 1: no clients selected, cancel
+DEBUG flwr 2023-09-11 18:19:09,801 | server.py:218 | fit_round 2: strategy sampled 10 clients (out of 100)
+[2023-09-11 18:19:09,801][flwr][DEBUG] - fit_round 2: strategy sampled 10 clients (out of 100)
+DEBUG flwr 2023-09-11 18:19:30,151 | server.py:232 | fit_round 2 received 10 results and 0 failures
+[2023-09-11 18:19:30,151][flwr][DEBUG] - fit_round 2 received 10 results and 0 failures
+INFO flwr 2023-09-11 18:19:33,474 | server.py:119 | fit progress: (2, 477.0151889324188, {'accuracy': 0.1}, 48.90705751394853)
+[2023-09-11 18:19:33,474][flwr][INFO] - fit progress: (2, 477.0151889324188, {'accuracy': 0.1}, 48.90705751394853)
+INFO flwr 2023-09-11 18:19:33,474 | server.py:166 | evaluate_round 2: no clients selected, cancel
+[2023-09-11 18:19:33,474][flwr][INFO] - evaluate_round 2: no clients selected, cancel
+DEBUG flwr 2023-09-11 18:19:33,474 | server.py:218 | fit_round 3: strategy sampled 10 clients (out of 100)
+[2023-09-11 18:19:33,474][flwr][DEBUG] - fit_round 3: strategy sampled 10 clients (out of 100)
+DEBUG flwr 2023-09-11 18:19:53,613 | server.py:232 | fit_round 3 received 10 results and 0 failures
+[2023-09-11 18:19:53,613][flwr][DEBUG] - fit_round 3 received 10 results and 0 failures
+INFO flwr 2023-09-11 18:19:56,866 | server.py:119 | fit progress: (3, 482.9496076107025, {'accuracy': 0.1524}, 72.2991625899449)
+[2023-09-11 18:19:56,866][flwr][INFO] - fit progress: (3, 482.9496076107025, {'accuracy': 0.1524}, 72.2991625899449)
+INFO flwr 2023-09-11 18:19:56,866 | server.py:166 | evaluate_round 3: no clients selected, cancel
+[2023-09-11 18:19:56,866][flwr][INFO] - evaluate_round 3: no clients selected, cancel
+INFO flwr 2023-09-11 18:19:56,866 | server.py:147 | FL finished in 72.29935921297874
+[2023-09-11 18:19:56,866][flwr][INFO] - FL finished in 72.29935921297874
+INFO flwr 2023-09-11 18:19:56,868 | app.py:218 | app_fit: losses_distributed []
+[2023-09-11 18:19:56,868][flwr][INFO] - app_fit: losses_distributed []
+INFO flwr 2023-09-11 18:19:56,868 | app.py:219 | app_fit: metrics_distributed_fit {}
+[2023-09-11 18:19:56,868][flwr][INFO] - app_fit: metrics_distributed_fit {}
+INFO flwr 2023-09-11 18:19:56,868 | app.py:220 | app_fit: metrics_distributed {}
+[2023-09-11 18:19:56,868][flwr][INFO] - app_fit: metrics_distributed {}
+INFO flwr 2023-09-11 18:19:56,869 | app.py:221 | app_fit: losses_centralized [(0, 499.0257976055145), (1, 590.2960395812988), (2, 477.0151889324188), (3, 482.9496076107025)]
+[2023-09-11 18:19:56,869][flwr][INFO] - app_fit: losses_centralized [(0, 499.0257976055145), (1, 590.2960395812988), (2, 477.0151889324188), (3, 482.9496076107025)]
+INFO flwr 2023-09-11 18:19:56,869 | app.py:222 | app_fit: metrics_centralized {'accuracy': [(0, 0.1006), (1, 0.1), (2, 0.1), (3, 0.1524)]}
+[2023-09-11 18:19:56,869][flwr][INFO] - app_fit: metrics_centralized {'accuracy': [(0, 0.1006), (1, 0.1), (2, 0.1), (3, 0.1524)]}
