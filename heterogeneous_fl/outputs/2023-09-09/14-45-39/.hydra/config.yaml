@@ -1,0 +1,21 @@
+foo: 788928288
+bar:
+  abar:
+  - 1
+  - 2
+  - 3
+  - 4
+  bbar:
+    bbar1: hello
+    bbar2: ${foo}
+sum_function:
+  _target_: hydra_exp.add_function
+  x: 200
+  'y': 300
+partial_sum_function:
+  _target_: hydra_exp.add_function
+  _partial_: true
+  'y': 1000
+sample_object:
+  _target_: hydra_exp.SampleClass
+  x: 8

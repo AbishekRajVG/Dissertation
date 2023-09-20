@@ -1,0 +1,14 @@
+foo: 812
+bar:
+  abar:
+  - 1
+  - 2
+  - 3
+  - 4
+  bbar:
+    bbar1: hello
+    bbar2: ${foo}
+sum_function:
+  _target_: add_function
+  x: 10
+  'y': 20

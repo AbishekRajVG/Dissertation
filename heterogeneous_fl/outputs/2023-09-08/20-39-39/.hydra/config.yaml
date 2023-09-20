@@ -1,0 +1,14 @@
+foo: 788928288
+bar:
+  abar:
+  - 1
+  - 2
+  - 3
+  - 4
+  bbar:
+    bbar1: hello
+    bbar2: ${foo}
+sum_function:
+  _target_: hydra_exp.add_function
+  x: 200
+  'y': 300

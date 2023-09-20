@@ -1,0 +1,23 @@
+---
+_target_: flwr.server.strategy.FedAvg
+fraction_fit: 0.0001
+min_fit_clients: ${num_clients_per_round_fit}
+fraction_evaluate: 0.0001
+min_evaluate_clients: ${num_clients_per_round_eval}
+min_available_clients: ${num_clients}
+on_fit_config_fn:
+    _target_: server.get_on_fit_config
+    config: ${config_fit}
+evaluate_fn:
+    _target_: server.get_evaluate_fn
+    model_cfg: ${model}
+    # num_classes:${num_classes}
+    testloader:
+        _target_: dataset.prepare_dataset
+        num_partitions: ${num_classes}
+        batch_size: ${batch_size}
+        val_ratio: 0.1
+        test_only: True
+
+
+

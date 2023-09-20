@@ -1,0 +1,10 @@
+foo: 812
+bar:
+  abar:
+  - 1
+  - 2
+  - 3
+  - 4
+  bbar:
+    bbar1: hello
+    bbar2: ${foo}
